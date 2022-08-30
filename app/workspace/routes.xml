@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <route path="home" view="articles" method="get"/>
+    <route path="about" view="article" method="get">
+        <filter param="moat" regex="soat"/>
+    </route>
+    <route path="articles" view="articles" method="any"/>
+    <route path="articles/$handle" view="article" method="any">
+        <filter param="handle" regex="\w.*"/>
+    </route>
+</routes>

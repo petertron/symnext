@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contents>
+    <fieldset legend="Essentials">
+        <row cols="2">
+            <field type="input">
+                <label>Name</label>
+                <handle>name</handle>
+                <path>meta/name</path>
+                <name>meta[name]</name>
+            </field>
+            <field type="input">
+                <label>Handle</label>
+                <handle>handle</handle>
+                <path>meta/handle</path>
+                <name>meta[handle]</name>
+            </field>
+        </row>
+    </fieldset>
+    <fieldset legend="Resources">
+        <row cols="2">
+            <field type="multi-select">
+                <label>Events</label>
+                <handle>events</handle>
+                <name>fields[events][]</name>
+            </field>
+            <field type="multi-select">
+                <label>Data Sources</label>
+                <handle>data_sources</handle>
+                <name>fields[data_sources][]</name>
+            </field>
+        </row>
+    </fieldset>
+</contents>

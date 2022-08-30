@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section>
+    <!-- Values may be edited but not edit the attributes. -->
+    <meta>
+        <name>Article</name>
+        <handle>article</handle>
+        <nav_group>Content</nav_group>
+        <hidden>no</hidden>
+        <filter>yes</filter>
+    </meta>
+    <fields>
+        <field class="Symnext\SectionFields\FieldInput">
+            <name>Title</name>
+            <handle>title</handle>
+            <location>main</location>
+            <validation></validation>
+            <required>yes</required>
+            <show_column>no</show_column>
+        </field>
+        <field class="Symnext\SectionFields\FieldCheckbox"">
+            <name>Published</name>
+            <handle>published</handle>
+            <location>sidebar</location>
+            <default_state>off</default_state>
+            <show_column>yes</show_column>
+        </field>
+        <field class="Symnext\SectionFields\FieldDate">
+            <name>Publication Date</name>
+            <handle>pub-date</handle>
+            <location>sidebar</location>
+            <pre_populate>now</pre_populate>
+            <calendar>yes</calendar>
+            <validation></validation>
+            <required>yes</required>
+            <show_column>no</show_column>
+        </field>
+        <field class="Symnext\SectionFields\FieldTextArea">
+            <name>Body</name>
+            <handle>body</handle>
+            <location>main</location>
+            <default_num_rows>15</default_num_rows>
+            <text_formatter></text_formatter>
+            <required>no</required>
+            <show_column>no</show_column>
+        </field>
+        <field class="Symnext\SectionFields\FieldSelectBox">
+            <name>Boing</name>
+            <handle>boing</handle>
+            <location>main</location>
+            <static_values>Boost, Voost, Foost</static_values>
+            <dynamic_values>
+                <section>8346A32F21</section>
+                <field>8346A324E2</field>
+            </dynamic_values>
+            <allow_multiple>no</allow_multiple>
+            <sort>yes</sort>
+            <required>no</required>
+            <show_column>no</show_column>
+        </field>
+        <field class="Symnext\SectionFields\FieldTagList">
+            <name>Tags</name>
+            <handle>tags</handle>
+            <location>main</location>
+            <dynamic_values>
+                <section>farming</section>
+                <field>harvest</field>
+            </dynamic_values>
+            <pre_populate_source>
+                <source>existing</source>
+                <source>article.title</source>
+                <source>article.pub-date</source>
+            </pre_populate_source>
+            <sort>yes</sort>
+            <required>no</required>
+            <show_column>no</show_column>
+        </field>
+        <field class="Symnext\SectionFields\FieldUpload">
+            <name>Up</name>
+            <handle>up</handle>
+            <location>sidebar</location>
+            <destination>workspace/assets/css</destination>
+            <validation>whee</validation>
+            <required>yes</required>
+            <show_column>no</show_column>
+        </field>
+    </fields>
+</section>

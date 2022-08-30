@@ -1,0 +1,28 @@
+{
+    "name": "symnext/symnext_admin_ui",
+    "title": "Admin User Interface",
+    "description": "Symnext admin user interface",
+    "type": "symnext-extension",
+    "version": "0.1",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/symnext",
+    "authors": [
+        {
+            "name": "Peter S",
+            "email": "peter.s@mail.uk",
+            "homepage": "https://www.peter-s.xyz"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Symnext\\AdminUI\\": "src/"
+        },
+        "files": [
+            "src/init.php"
+        ]
+    }
+}

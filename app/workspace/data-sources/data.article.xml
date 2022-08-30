@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasource class="Symnext\DataSources\SectionDataSource">
+    <name>Article</name>
+    <root_element>article</root_element>
+    <order>desc</order>
+    <paginate>yes</paginate>
+    <limit>1</limit>
+    <start_page>1</start_page>
+    <redirect_on_empty>yes</redirect_on_empty>
+    <required_param>$entry</required_param>
+    <param_output>
+        <item>system:id</item>
+    </param_output>
+    <sort>date</sort>
+    <associated_entry_counts>yes</associated_entry_counts>
+    <filters>
+        <filter n="1">{$entry}</filter>
+        <filter n="5">yes</filter>
+    </filters>
+    <included_elements>
+        <item>title</item>
+        <item>body: formatted</item>
+        <item>date</item>
+        <item>categories</item>
+    </included_elements>
+    <source>1</source>
+</datasource>

@@ -1,0 +1,6 @@
+#!/bin/env php
+<?php
+
+array_splice($argv, 1, 0, ['server']);
+$argc++;
+require 'cli.php';

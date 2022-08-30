@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <meta>
+        <name>Article</name>
+        <handle>article</handle>
+        <type></type>
+    </meta>
+    <datasources>
+        <ds>article</ds>
+    </datasources>
+    <events>
+        <event></event>
+    </events>
+</view>
+

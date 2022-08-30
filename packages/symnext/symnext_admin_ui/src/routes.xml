@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <route path="install" namespace="Symnext\AdminUI\Views" class="Install"/>
+    <group path="{$admin.admin_path$}" namespace="Symnext\AdminUI\Views">
+        <route path="publish/$section_handle" class="PublishIndex"/>
+        <route path="publish/$section_handle/new" class="PublishEdit"/>
+        <route path="publish/$section_handle/edit/$entry_handle" class="PublishEdit"/>
+        <group path="blueprints">
+            <route path="routes" class="BlueprintsRoutesIndex"/>
+            <route path="routes/new" class="BlueprintsRoutesEdit"/>
+            <route path="routes/edit/$route_num" class="BlueprintsRoutesEdit"/>
+            <route path="views" class="BlueprintsViewsIndex"/>
+            <route path="views/new" class="BlueprintsViewsEdit"/>
+            <route path="views/edit/$handle" class="BlueprintsViewsEdit"/>
+            <route path="sections" class="BlueprintsSectionsIndex"/>
+            <route path="sections/new" class="BlueprintsSectionsEdit" method="create"/>
+            <route path="sections/edit/$handle" class="BlueprintsSectionsEdit" method="edit"/>
+            <route path="datasources" class="BlueprintsDatasourcesIndex"/>
+        </group>
+        <group path="system">
+            <route path="settings" class="SystemSettings"/>
+            <route path="extensions" class="SystemExtensions"/>
+        </group>
+    </group>
+</routes>

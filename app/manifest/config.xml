@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+   <!-- GENERAL -->
+   <site>
+      <name>Symnext CMS</name>
+      <mode>development</mode>
+   </site>
+
+   <!-- ADMIN -->
+   <admin>
+      <admin_path>admin</admin_path>
+      <max_upload_size>5242880</max_upload_size>
+      <upload_blacklist>/\\.(?:php34567s]?|phtml|pht)$/i</upload_blacklist>
+   </admin>
+
+   <!-- SYMNEXT -->
+   <symnext>
+      <lang>en</lang>
+      <version>0.1.0</version>
+      <cookie_prefix>sn-</cookie_prefix>
+      <session_gc_divisor>10</session_gc_divisor>
+      <session_strict_domain>yes</session_strict_domain>
+      <cell_truncation_length>75</cell_truncation_length>
+      <enable_xsrf>yes</enable_xsrf>
+      <error_reporting_all>no</error_reporting_all>
+      <useragent>Symnext/3.0.0</useragent>
+      <pagination_max_rows>20</pagination_max_rows>
+      <association_max_rows>5</association_max_rows>
+   </symnext>
+
+   <!-- LOG -->
+   <log>
+      <archive>1</archive>
+      <max-size>10485760</max-size>
+      <filter>24575</filter>
+   </log>
+
+   <!-- REGION -->
+   <region>
+      <datetime_separator>,</datetime_separator>
+      <timezone>Europe/London</timezone>
+      <time_format>g:i a</time_format>
+      <date_format>m/d/Y</date_format>
+   </region>
+
+   <!-- DATABASE -->
+   <database>
+      <driver>mysql</driver>
+      <host>localhost</host>
+      <port>3306</port>
+      <user>root</user>
+      <password>wolfSELF</password>
+      <database>symnext</database>
+      <charset>utf8mb4</charset>
+      <collate>utf8mb4_unicode_ci</collate>
+      <engine>InnoDB</engine>
+      <table_prefix>sn_</table_prefix>
+      <query_logging>on</query_logging>
+   </database>
+
+   <!-- PUBLIC -->
+   <public>
+      <display_event_xml_in_source>no</display_event_xml_in_source>
+   </public>
+
+   <!-- FILES -->
+   <files>
+      <file_write_mode>0644</file_write_mode>
+      <directory_write_mode>0755</directory_write_mode>
+   </files>
+
+   <!-- CACHE DRIVER -->
+   <cache_driver>
+      <default>database</default>
+   </cache_driver>
+
+</configuration>

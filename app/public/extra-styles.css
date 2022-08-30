@@ -1,0 +1,35 @@
+body[data-shift-key-down="1"] table.selectable tr.anchor a::before {
+    position: absolute;
+    /*content: '● ';*/
+    margin-left: -1.4rem;
+    content: '⚓';
+    color: red;
+}
+
+div.duplicator ol {
+    position: relative;
+}
+
+div.duplicator li * {
+    backgroundColor: #888;
+}
+
+div.duplicator li * {
+    user-select: none;
+}
+
+/*.collapsible .content {
+    max-height: 1000vh;
+    overflow: hidden;
+    transition: max-height .15s ease-in-out;
+}
+*/
+.collapsible .collapsed .content {
+    display: none;
+}
+
+div.sticky, p.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 1rem;
+}
